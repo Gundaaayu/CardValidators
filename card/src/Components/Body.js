@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import './body.css'
 import image from '../assets/Rectangle 1.png'
 import TextField from "@mui/material/TextField";
@@ -9,7 +9,11 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import Button from "@mui/material/Button";
 import ConfirmationDialog from './Confirm';
 import cardImg from '../assets/Frame 2.png'
-// import bgimage from '../assets/Frame 2.png'
+import format from "date-fns/format";
+import { isDate } from "date-fns";
+import dayjs from "dayjs";
+
+
 const Body = () => {
   const [openFirstDialog, setOpenFirstDialog] = useState(false);
   const [openSecondDialog, setOpenSecondDialog] = useState(false);
@@ -33,8 +37,14 @@ const Body = () => {
   const handleCloseSecondDialog = () => {
     setOpenSecondDialog(false);
   };
-
-
+const formatDate = (date) => {
+ if (date) {
+    // Convert the date object to a Day.js object and then format it
+    const dayjsDate = dayjs(date);
+    return dayjsDate.format("MM/YY");
+  }
+  return "Select a date";
+};
   return (
     <>
       <div style={{ display: "flex", height: "100vh", width: "100vw" }}>
@@ -114,7 +124,7 @@ const Body = () => {
                     <h2 style={{ color: "white" }}>{cardNumber}</h2>
                     <div style={{ display: "flex", gap: "250px" }}>
                       <h3>{cardHolderName}</h3>
-                      <h3>{date}</h3>
+                      <h3>{formatDate(date)}</h3>
                     </div>
                   </div>
                 </div>
