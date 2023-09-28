@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/CardValidators/static/css/main.e5048a09.css",
+    "main.js": "/CardValidators/static/js/main.b812a2a9.js",
+    "static/js/787.4b846e2a.chunk.js": "/CardValidators/static/js/787.4b846e2a.chunk.js",
+    "static/media/Rectangle 1.png": "/CardValidators/static/media/Rectangle 1.902a6cb0c6ef8dedb90f.png",
+    "static/media/Frame 2.png": "/CardValidators/static/media/Frame 2.777e81019778e04a619e.png",
+    "index.html": "/CardValidators/index.html",
+    "main.e5048a09.css.map": "/CardValidators/static/css/main.e5048a09.css.map",
+    "main.b812a2a9.js.map": "/CardValidators/static/js/main.b812a2a9.js.map",
+    "787.4b846e2a.chunk.js.map": "/CardValidators/static/js/787.4b846e2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5048a09.css",
+    "static/js/main.b812a2a9.js"
+  ]
+}
