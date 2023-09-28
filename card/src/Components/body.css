@@ -12,3 +12,21 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.frontcard{
+    position: relative;
+}
+.textContainer{
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+.backCard{
+     position: relative;
+}
+.textContainerBack{
+    position: absolute;
+    top: 120px;
+    left: 330px;
+
+}
